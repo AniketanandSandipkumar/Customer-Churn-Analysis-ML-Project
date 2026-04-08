@@ -186,7 +186,7 @@ streamlit run app.py
 ![Prediction](screenshots/prediction.png)
 
 ## Model Explainability
-![SHAP](screenshots/shap_plot.png)
+![SHAP](visualizations/shap_features_importance.png)
 
 ---
 # 🧪 Example Prediction
