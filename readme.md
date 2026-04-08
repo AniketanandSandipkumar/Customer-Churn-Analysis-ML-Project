@@ -79,25 +79,25 @@ Explainability (SHAP)
 # 📂 Project Structure
 
 
-Customer-Churn/
-│
-├── data/ # Dataset files
-├── models/ # Saved ML models
-├── screenshots/ # Project visuals
-│
-├── src/
-│ ├── preprocessing.py
-│ ├── validation.py
-│ ├── train_model.py
-│ ├── predict.py
-│ ├── explainability.py
-│
-├── docs/
-│ └── architecture.md
-│
-├── app.py # Streamlit app
-├── requirements.txt
-└── README.md
+Customer-Churn/  
+│  
+├── data/ # Dataset files  
+├── models/ # Saved ML models  
+├── screenshots/ # Project visuals  
+│  
+├── src/  
+│ ├── preprocessing.py  
+│ ├── validation.py  
+│ ├── train_model.py  
+│ ├── predict.py  
+│ ├── explainability.py  
+│  
+├── docs/  
+│ └── architecture.md  
+│  
+├── app.py # Streamlit app  
+├── requirements.txt  
+└── README.md  
 
 ---
 
