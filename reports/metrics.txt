@@ -1,9 +1,20 @@
-Logistic
-{'Accuracy': 0.8288155339805825, 'Precision': 0.8113298902517754, 'Recall': 0.8292642692180798, 'F1': 0.8201990536792299}
+Best Model: XGBoost
+
+LogisticRegression
+Accuracy: 0.8323
+Precision: 0.8162
+Recall: 0.8325
+F1: 0.8243
 
 RandomForest
-{'Accuracy': 0.999378640776699, 'Precision': 0.9993453355155483, 'Recall': 0.9993453355155483, 'F1': 0.9993453355155483}
+Accuracy: 0.9995
+Precision: 1.0000
+Recall: 0.9988
+F1: 0.9994
 
 XGBoost
-{'Accuracy': 0.9998446601941747, 'Precision': 0.9998367080339647, 'Recall': 0.9998367080339647, 'F1': 0.9998367080339647}
+Accuracy: 0.9998
+Precision: 0.9998
+Recall: 0.9997
+F1: 0.9998
 

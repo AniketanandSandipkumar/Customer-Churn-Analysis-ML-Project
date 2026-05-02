@@ -1,54 +1,67 @@
+import shap
 import pickle
 import pandas as pd
-import matplotlib.pyplot as plt
 import os
-import shap
+import matplotlib.pyplot as plt
 
-# Create folder
-os.makedirs("visualizations", exist_ok=True)
-
-# Load pipeline
-pipeline = pickle.load(open("models/churn_model_latest.pkl", "rb"))
-
-# Split pipeline
-model = pipeline.named_steps["model"]
-preprocessor = pipeline.named_steps["preprocessor"]
+from src.preprocessing import create_features
 
 def explain_model():
 
-    # Sample input
-    sample = pd.DataFrame([{
-        "Age": 30,
-        "Gender": "Male",
-        "Tenure": 12,
-        "Usage Frequency": 10,
-        "Support Calls": 2,
-        "Payment Delay": 5,
-        "Subscription Type": "Standard",
-        "Contract Length": "Monthly",
-        "Total Spend": 500,
-        "Last Interaction": 10
-    }])
+    # -----------------------------
+    # Create visualization folder
+    # -----------------------------
+    os.makedirs("visualizations", exist_ok=True)
 
-    # Feature Engineering
-    sample["Usage_Intensity"] = sample["Usage Frequency"] / (sample["Tenure"] + 1)
-    sample["Spend_per_Tenure"] = sample["Total Spend"] / (sample["Tenure"] + 1)
+    # -----------------------------
+    # Load trained pipeline
+    # -----------------------------
+    model = pickle.load(open("models/churn_model_latest.pkl", "rb"))
 
-    # Transform data
-    X_processed = preprocessor.transform(sample)
+    # -----------------------------
+    # Extract model + preprocessor
+    # -----------------------------
+    clf = model.named_steps["model"]
+    preprocessor = model.named_steps["preprocessor"]
 
-    # Use TreeExplainer for tree models
-    explainer = shap.TreeExplainer(model)
+    # -----------------------------
+    # Load sample data (same as training)
+    # -----------------------------
+    df = pd.read_csv("data/customer_churn_dataset.csv")
 
-    shap_values = explainer.shap_values(X_processed)
+    if "CustomerID" in df.columns:
+        df = df.drop("CustomerID", axis=1)
 
-    # Plot
-    shap.summary_plot(shap_values, X_processed, show=False)
+    df = create_features(df)
 
-    plt.savefig("visualizations/shap_feature_importance.png")
+    X = df.drop("Churn", axis=1).head(50)
+
+    # -----------------------------
+    # Transform data using pipeline
+    # -----------------------------
+    X_transformed = preprocessor.transform(X)
+
+    # -----------------------------
+    # SHAP Explainer (Tree-based)
+    # -----------------------------
+    explainer = shap.TreeExplainer(clf)
+
+    shap_values = explainer.shap_values(X_transformed)
+
+    # -----------------------------
+    # Plot SHAP summary
+    # -----------------------------
+    shap.summary_plot(shap_values, X_transformed, show=False)
+
+    plt.tight_layout()
+    plt.savefig("visualizations/shap_summary.png")
     plt.close()
 
-    print("SHAP visualization saved!")
+    print("✅ SHAP explanation saved at: visualizations/shap_summary.png")
 
+
+# -----------------------------
+# Run
+# -----------------------------
 if __name__ == "__main__":
     explain_model()

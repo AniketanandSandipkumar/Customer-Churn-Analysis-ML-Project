@@ -1,5 +1,11 @@
 __pycache__/
 *.pyc
-*.pkl
+*.pyo
+*.pyd
 .env
 venv/
+.env/
+.ipynb_checkpoints/
+models/
+logs/
+visualizations/

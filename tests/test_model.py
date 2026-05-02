@@ -11,14 +11,13 @@ def test_model_prediction():
         "Usage Frequency": 10,
         "Support Calls": 2,
         "Payment Delay": 5,
-        "Subscription Type": "Standard",
+        "Subscription Type": "Basic",
         "Contract Length": "Monthly",
         "Total Spend": 500,
         "Last Interaction": 10,
-        "Usage_Intensity": 10/(12+1),
-        "Spend_per_Tenure": 500/(12+1)
+        "Usage_Intensity": 0.7,
+        "Spend_per_Tenure": 40
     }])
 
     pred = model.predict(sample)
-
-    assert pred is not None
+    assert pred[0] in [0,1]
