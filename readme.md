@@ -212,13 +212,13 @@ streamlit run app.py
 # 📊 Project Preview
 
 ## Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 
 ## Prediction Output
-![Prediction](screenshots/prediction.png)
+![Prediction](prediction.png)
 
 ## Model Explainability
-![SHAP](visualizations/shap_feature_importance.png)
+![SHAP](shap_summary.png)
 
 ---
 # 🧪 Example Prediction
