@@ -277,7 +277,7 @@ Churn Probability: 0.73
 ---  
 
 # App Link  
-  frontend - https://customer-churn-analysis-ml-project-yyykdxtfgfkoynyeaeg9oh.streamlit.app/
+  frontend - https://customer-churn-analysis-ml-project-yyykdxtfgfkoynyeaeg9oh.streamlit.app/  
   backend - https://customer-churn-analysis-ml-project.onrender.com  
 
 ---  
