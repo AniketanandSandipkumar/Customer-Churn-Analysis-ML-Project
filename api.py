@@ -9,7 +9,7 @@ model = pickle.load(open("models/churn_model_latest.pkl", "rb"))
 
 @app.get("/")
 def home():
-    return {"message": "Churn Prediction API Running"}
+    return {"message": "Churn API Running 🚀"}
 
 @app.post("/predict")
 def predict(data: dict):
