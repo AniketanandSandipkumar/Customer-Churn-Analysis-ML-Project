@@ -274,7 +274,13 @@ Churn Probability: 0.73
 - Handling environment & dependency issues 
 - Designing scalable ML architecture  
 
----
+---  
+
+# App Link  
+  frontend - https://customer-churn-analysis-ml-project-yyykdxtfgfkoynyeaeg9oh.streamlit.app/
+  backend - https://customer-churn-analysis-ml-project.onrender.com  
+
+---  
 
 # 👨‍💻 Author
 
