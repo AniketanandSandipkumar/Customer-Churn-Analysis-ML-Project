@@ -44,19 +44,19 @@ Build a system that predicts churn probability and enables **proactive retention
 
 # 🏗️ System Architecture (Month 5)
 
-User Input (Streamlit UI)  
+User Input (Streamlit UI)    
         ↓  
-API Call (HTTP)
+API Call (HTTP)    
         ↓  
-FastAPI Backend (Render) 
+FastAPI Backend (Render)  
         ↓  
-Feature Engineering Pipeline 
+Feature Engineering Pipeline   
         ↓  
-Trained ML Model (RandomForest / XGBoost) 
+Trained ML Model (RandomForest / XGBoost)   
         ↓  
-Prediction Output
+Prediction Output  
        ↓  
-Logging + Monitoring
+Logging + Monitoring  
 
 ---
 
@@ -85,24 +85,23 @@ Logging + Monitoring
 
 
 
-Customer-Churn/
-│
-├── data/
-├── models/
-├── logs/
-├── visualizations/
-├── screenshots/
-│
-├── src/
-│ ├── preprocessing.py
-│ ├── train_model.py
-│ ├── explainability.py
-│ ├── visualize.py
-│
-├── api.py
-├── app.py
-├── requirements.txt
-└── README.md
+Customer-Churn/  
+│  
+├── data/  
+├── models/  
+├── logs/  
+├── visualizations/  
+├── screenshots/ 
+│  
+├── src/  
+│ ├── preprocessing.py  
+│ ├── train_model.py  
+│ ├── explainability.py  
+│ ├── visualize.py  
+├── api.py  
+├── app.py  
+├── requirements.txt  
+└── README.md  
 
 
 ---
