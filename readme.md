@@ -1,35 +1,36 @@
-# 🌟 Customer Churn Prediction System  
-**End-to-End Machine Learning Project | Production-Ready Pipeline**
+# 🚀 Customer Churn Prediction System (Production-Grade ML System)  
+**End-to-End Machine Learning Project | Microservices Architecture | Real-Time API Deployment**
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.1.1-lightgrey?logo=pandas&logoColor=black)](https://pandas.pydata.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-1.26-yellowgreen?logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-2.2-lightgrey?logo=pandas&logoColor=black)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-2.0-yellowgreen?logo=numpy&logoColor=white)](https://numpy.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Model-red?logo=xgboost&logoColor=white)](https://xgboost.ai/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-ff4b4b?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![GitHub Repo Size](https://img.shields.io/github/repo-size/YOUR_USERNAME/Customer-Churn)]()
-[![Top Language](https://img.shields.io/github/languages/top/YOUR_USERNAME/Customer-Churn)]()
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-ff4b4b?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Render](https://img.shields.io/badge/Render-Deployment-purple?logo=render&logoColor=white)](https://render.com/)
+[![Repo Size](https://img.shields.io/github/repo-size/AniketanandSandipkumar/Customer-Churn-Analysis-ML-Project)]()
+[![Top Language](https://img.shields.io/github/languages/top/AniketanandSandipkumar/Customer-Churn-Analysis-ML-Project)]()
 
 ---
 
 # 📊 Project Overview
 
-This project presents a **complete end-to-end Machine Learning solution** to predict customer churn using real-world behavioral features.  
+This project presents a **production-ready, end-to-end Machine Learning system** to predict customer churn using behavioral and transactional data.
 
-It simulates an **industry-grade ML pipeline** covering:
+Unlike traditional ML projects, this system follows a **real-world industry architecture**:
 
-- Data preprocessing & validation  
-- Feature engineering  
-- Model training & evaluation  
-- Model persistence & versioning  
-- Interactive dashboard deployment  
-- Model explainability  
+- ✅ End-to-end ML pipeline  
+- ✅ REST API deployment (FastAPI)  
+- ✅ Frontend-backend separation  
+- ✅ Real-time prediction system  
+- ✅ Monitoring & logging  
 
 ---
 
 # 🎯 Business Problem
 
-Customer churn is a critical issue for subscription-based businesses.  
+Customer churn is a critical issue for subscription-based businesses.
 
 👉 Losing customers leads to:
 - Revenue decline  
@@ -37,27 +38,30 @@ Customer churn is a critical issue for subscription-based businesses.
 - Reduced lifetime value  
 
 ### 💡 Objective:
-Build a system that can **predict churn probability** and help businesses take **proactive retention actions**.
+Build a system that predicts churn probability and enables **proactive retention strategies**.
 
 ---
 
-# 🏗️ System Architecture
+# 🏗️ System Architecture (Month 5)
 
 User Input (Streamlit UI)  
         ↓  
-Data Preprocessing  
+API Call (HTTP)
         ↓  
-Feature Engineering  
+FastAPI Backend (Render) 
         ↓  
-Trained Machine Learning Model (XGBoost)  
+Feature Engineering Pipeline 
         ↓  
-Prediction Output  
+Trained ML Model (RandomForest / XGBoost) 
         ↓  
-Explainability (SHAP)
+Prediction Output
+       ↓  
+Logging + Monitoring
 
 ---
 
 📄 Detailed design available in: `docs/architecture.md`
+
 
 ---
 
@@ -65,45 +69,45 @@ Explainability (SHAP)
 
 | Category | Tools |
 |--------|------|
-| Programming | Python 3 |
+| Programming | Python |
 | Data Processing | Pandas, NumPy |
 | Machine Learning | Scikit-learn, XGBoost |
-| Feature Engineering | Custom Pipelines |
+| Backend | FastAPI |
+| Frontend | Streamlit |
+| Deployment | Render, Streamlit Cloud |
 | Visualization | Matplotlib |
-| Explainability | SHAP |
-| Deployment | Streamlit |
-| Persistence | Pickle |
+| Logging | CSV-based logging |
+| Monitoring | Streamlit dashboard |
 
 ---
 
 # 📂 Project Structure
 
 
-Customer-Churn/  
-│  
-├── data/ # Dataset files  
-├── models/ # Saved ML models  
-├── screenshots/ # Project visuals  
-│  
-├── src/  
-│ ├── preprocessing.py  
-│ ├── validation.py  
-│ ├── train_model.py  
-│ ├── predict.py  
-│ ├── explainability.py  
-│  
-├── docs/  
-│ └── architecture.md  
-│  
-├── app.py # Streamlit app  
-├── requirements.txt  
-└── README.md  
+
+Customer-Churn/
+│
+├── data/
+├── models/
+├── logs/
+├── visualizations/
+├── screenshots/
+│
+├── src/
+│ ├── preprocessing.py
+│ ├── train_model.py
+│ ├── explainability.py
+│ ├── visualize.py
+│
+├── api.py
+├── app.py
+├── requirements.txt
+└── README.md
+
 
 ---
 
 # 📊 Machine Learning Workflow
-
-The project follows a **complete ML lifecycle**:
 
 1. Data Collection  
 2. Data Cleaning  
@@ -111,8 +115,8 @@ The project follows a **complete ML lifecycle**:
 4. Model Training  
 5. Model Evaluation  
 6. Model Selection  
-7. Deployment  
-8. Monitoring  
+7. API Deployment  
+8. Monitoring & Logging  
 
 ---
 
@@ -120,10 +124,10 @@ The project follows a **complete ML lifecycle**:
 
 | Metric | Value |
 |------|------|
-| Accuracy | ~85% |
+| Accuracy | ~99% |
 | Precision | High |
-| Recall | Optimized for churn detection |
-| Model Used | XGBoost |
+| Recall | Optimized |
+| Model Used | RandomForest |
 
 ---
 
@@ -131,13 +135,10 @@ The project follows a **complete ML lifecycle**:
 
 Custom features significantly improved performance:
 
-- **Usage_Intensity**  
-  = Usage Frequency / Tenure  
+- **Usage_Intensity** = Usage Frequency / Tenure  
+- **Spend_per_Tenure** = Total Spend / Tenure  
 
-- **Spend_per_Tenure**  
-  = Total Spend / Tenure  
-
-📌 Ensured **feature consistency between training and deployment**
+📌 Ensured consistency between training and deployment pipeline
 
 ---
 
@@ -146,9 +147,10 @@ Custom features significantly improved performance:
 ## 1️⃣ Clone Repository
 
 
-git clone https://github.com/YOUR_USERNAME/Customer-Churn.git
 
-cd Customer-Churn
+git clone https://github.com/AniketanandSandipkumar/Customer-Churn-Analysis-ML-Project.git
+
+cd Customer-Churn-Analysis-ML-Project
 
 
 ---
@@ -166,6 +168,13 @@ pip install -r requirements.txt
 
 python -m src.train_model
 
+---
+
+## 4️⃣ Run Backend API
+
+
+uvicorn api:app --reload
+
 
 ---
 
@@ -175,6 +184,30 @@ python -m src.train_model
 streamlit run app.py
 
 
+
+---
+
+# 📡 API Usage
+
+### Endpoint:POST /predict
+
+
+### Example Request:
+
+```json
+{
+  "Age": 30,
+  "Gender": "Male",
+  "Tenure": 12,
+  "Usage Frequency": 10,
+  "Support Calls": 2,
+  "Payment Delay": 5,
+  "Subscription Type": "Basic",
+  "Contract Length": "Monthly",
+  "Total Spend": 500,
+  "Last Interaction": 10
+}
+```
 ---
 
 # 📊 Project Preview
@@ -234,10 +267,10 @@ Churn Probability: 0.73
 
 # 🧠 Learnings & Takeaways
 
-- Importance of feature engineering in ML performance  
-- Maintaining consistency between training & inference  
-- Building modular and scalable ML systems  
-- Deploying ML models for real-world use  
+- Transition from ML model → ML system 
+- API-based deployment in real-world systems  
+- Handling environment & dependency issues 
+- Designing scalable ML architecture  
 
 ---
 
