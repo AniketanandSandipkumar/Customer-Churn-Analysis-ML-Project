@@ -217,6 +217,9 @@ streamlit run app.py
 ## Prediction Output
 ![Prediction](prediction.png)
 
+## Logging 
+![Monitor](pred_monitoring.png)
+
 ## Model Explainability
 ![SHAP](shap_summary.png)
 
